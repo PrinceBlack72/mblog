@@ -19,5 +19,6 @@ from mainsite import views as v
 
 urlpatterns = [
     url(r'^$', v.homepage),
+    url(r'^post/(\w+)$', v.showpost),
     url(r'^admin/', admin.site.urls),
 ]
